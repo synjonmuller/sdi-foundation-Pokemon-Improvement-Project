@@ -1,0 +1,72 @@
+/* Overall page background */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Centered title styling */
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  
+  /* Centered grid for Pokemon cards, 3 columns */
+  .pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  /* Styling for each Pokemon card */
+  .pokemon-card,
+  .single-pokemon-card {
+    background-color: #f0f8ff; /* Infill color */
+    border: 3px solid black;   /* Solid border */
+    border-radius: 15px;         /* Rounded edges */
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* Pokemon name styling */
+  .pokemon-card h2,
+  .single-pokemon-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Default Pokemon image dimensions for card view */
+  .pokemon-card img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Larger image for individual Pokemon view */
+  .single-pokemon-card img {
+    width: 400px;
+    height: 400px;
+  }
+  
+  /* Remove default list styling */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Styling for move items */
+  li {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  /* Additional rule for centering the detail view card */
+  .single-pokemon-card {
+    grid-column: 1 / -1;   /* Span the entire width of the grid */
+    justify-self: center;  /* Center it within the grid area */
+    max-width: 400px;      /* Optional: limit the width of the card */
+  }
+  
